@@ -27,8 +27,8 @@ function createPromise(position, delay) {
   });
 }
 
-function onFormSubmit(e) {
-  e.preventDefault();
+function onFormSubmit(evt) {
+  evt.preventDefault();
   if (delayEl.value <= 0 || stepEl.value <= 0 || amountEl.value <= 0) {
     return Notiflix.Report.warning(
       'The number must be greater than 0',
@@ -56,5 +56,5 @@ function onFormSubmit(e) {
     delayTime += Number(stepEl.value);
   }
 
-  e.target.reset();
+  evt.target.reset();
 }
