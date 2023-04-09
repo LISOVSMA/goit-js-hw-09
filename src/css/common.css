@@ -18,6 +18,7 @@ img {
 }
 
 button {
+  background-color: #8ff7bc;
   color: #212121;
   padding: 10px 30px;
   border: 1px solid #212121;
@@ -32,12 +33,5 @@ button:disabled {
   background-color: #e2e7e4;
   color: #5c5b5b;
   border-color: #5c5b5b;
-}
-
-.start {
-  background-color: #14f371;
-}
-
-.stop {
-  background-color: #f34646;
+  cursor: not-allowed;
 }
